@@ -6,7 +6,6 @@ class App < Sinatra::Base
    @style = params[style]
    @brand = params[brand]
     
-                     toyota           
    if @brand == "Toyota" && @price == "$0 - $7,500" && @style == "Sedan"
      erb :toylowsed
    elsif @brand == "Toyota" && @price == "$0 - $7,500" && @style == "SUV"
@@ -35,8 +34,8 @@ elsif @brand == "Toyota" && @price == "$10,000 -  $15,000" && @style == "Sedan"
   elsif @brand == "Toyota" && @price == "$15,000 +" && @style == "Hatchback"
      erb :toyhihb
 
-End 
-                     Honda                      :      
+end 
+
   if @brand == "Honda" && @price == "$0 - $7,500" && @style == "Sedan"
      erb :toylowsed
    elsif @brand == "Honda" && @price == "$0 - $7,500" && @style == "SUV"
@@ -64,9 +63,8 @@ elsif @brand == "Honda" && @price == "$10,000 -  $15,000" && @style == "Sedan"
      erb :honhisuv
   elsif @brand == "Honda" && @price == "$15,000 +" && @style == "Hatchback"
      erb :toyhihb
-  End
+  end
 
-            Subaru        :            
  if @brand == "Subaru" && @price == "$0 - $7,500" && @style == "Sedan"
      erb :sublowsed
    elsif @brand == "Subaru" && @price == "$0 - $7,500" && @style == "SUV"
@@ -94,10 +92,9 @@ elsif @brand == "Subaru" && @price == "$10,000 -  $15,000" && @style == "Sedan"
      erb :subhisuv
   elsif @brand == "Subaru" && @price == "$15,000 +" && @style == "Hatchback"
      erb :subhihb
-End 
+end 
 
 
-                  Ford                            :    
 if @brand == "Ford" && @price == "$0 - $7,500" && @style == "Sedan"
      erb :forlowsed
    elsif @brand == "Ford" && @price == "$0 - $7,500" && @style == "SUV"
@@ -125,10 +122,8 @@ elsif @brand == "Ford" && @price == "$10,000 -  $15,000" && @style == "Sedan"
      erb :forhisuv
   elsif @brand == "Ford" && @price == "$15,000 +" && @style == "Hatchback"
      erb :forhihb
+end 
 
-End 
-
-Hyundai        :
 if @brand == "Hyundai" && @price == "$0 - $7,500" && @style == "Sedan"
      erb :hyulowsed
    elsif @brand == "Hyundai" && @price == "$0 - $7,500" && @style == "SUV"
@@ -156,7 +151,6 @@ elsif @brand == "Hyundai" && @price == "$10,000 -  $15,000" && @style == "Sedan"
      erb :hyuhisuv
   elsif @brand == "Hyundai" && @price == "$15,000 +" && @style == "Hatchback"
      erb :hyuhihb
-
 end 
 
   
